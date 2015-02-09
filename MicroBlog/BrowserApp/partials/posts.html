@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-8"><h3>Billets</h3></div>
+            <div class="col-md-4">
+                <h3><input ng-model="query" placeholder="Search" class="form-control"></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-body">
+        <div ng-repeat="post in posts | filter:query" class="panel panel-default">
+            <div class="panel-heading">{{post.title}}</div>
+            <div class="panel-body">{{post.body}}</div>
+        </div>
+    </div>
+</div>
