@@ -22,6 +22,6 @@ angular.module("MicroBlog", ['ngRoute'])
     // Example controller for the index of Posts, contains some preliminary test data to replace with data from the server
    .controller('postsCtrl', ['$scope', function ($scope) {
        $scope.posts = [{ title: 'Météo du jour', body: 'Soleil et nuage, un petit peu de pluie' },
-           {title: 'Le Francs Suisse au niveau de l\'Euro', body: 'La BNS a décidé de ne plus maintenir ....'}
+           {title: 'Crise des réfugiés', body: "L'Europe doit trouver une solution..."}
            ];
     }]);
